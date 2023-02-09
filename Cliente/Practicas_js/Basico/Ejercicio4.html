@@ -17,14 +17,12 @@
     window.alert(`Has obtenido $${100} en dinero electronico`);
 </script>
 
-
 <h2>Metodos de salida</h2>
     <script>
         document.write("JavaScript <br>");
         document.writeln(10+10);
         document.write("Texto");
     </script>
-
 
     <script>
     document.write("El resultado es "+(10+10)*(8+3));
@@ -37,8 +35,12 @@
         console.log((24+12)*(21+5));
     </script>
 
+    <h3>Elemento HTML</h3>
+    <p id="ejemplo">Elemento a utilizar con JS</p>
 
-
-    
+    <script>
+document.getElementById("ejemplo").innerHTML=15*2;
+    </script>
+   
 </body>
 </html>
