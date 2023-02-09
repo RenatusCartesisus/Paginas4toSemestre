@@ -1,0 +1,1 @@
+console.log("El resultado es "+(10+10)*(8+3));
