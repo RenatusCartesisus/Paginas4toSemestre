@@ -7,16 +7,16 @@
     <title>Ejercicio 5</title>
 </head>
 <body>
-    
     <h1>Tipos de datos</h1>
     <hr>
     <h4>Numerico entero y float</h4>
 
     <script>
+        // Guardamos en variables, que se inicializan con la palabra reservada "var"
         var edad=16;
         var sueldo=206.50;
     </script>
-
+    <!-- Igualmente, podemos guardar elementos de texto siempre y cuando se encuentren entre comillas o apostrofes -->
     <h4>String -> Cadena de Texto</h4>
 
     <script>
@@ -25,18 +25,21 @@
     </script>
 
     <h4>Concatenación</h4>
-
+<!-- Para concatenar, es similar a  -->
     <script>
+        // Damos valores a las variables
         var nombre="Ludwig Van";
         var apellido = "Beethoven";
         var sueldo = 206.5;
     
         // document.write("Mi nombre es "+nombre+" "+apellido+", y mi sueldo es de $"+sueldo+" pesos.");
+        // Escribimos los valores que tenemos
      document.write(`Mi nombre es ${nombre} ${apellido}, y mi sueldo es de ${sueldo} pesos.`);
     </script>
 
     <h4>Arreglos</h4>
     <script>
+        // Creamos un arreglo
         let maestros = ["Daniel Mendez", "Mario Perez", "Mauro Rojas", "Luna"];
         document.write(maestros[1]);
     </script>
@@ -44,6 +47,7 @@
     <h4>Objetos</h4>
     <p>Este tipo de datos se declara en una hoja de estilo CSS</p>
     <script>
+        // Notacion de objetos de JavaScript
         var Object={
         color:"blue",
         size:12
@@ -54,18 +58,20 @@
 
     <h4>Boolean</h4>
     <script>
+        // El tipo de dato Booleano
         var falso = false;
         var verdadero = true;
     </script>
-
+<!-- Variables indefinidas -->
     <h4>Indefinido-Undefined</h4>
     <script>
-        var computadora;
+     computadora;
     </script>
 
 <h4>Null</h4>
+<!-- Variables nulas en JavaScript -->
 <script>
-    var numero=12;
+    var numero=11;
     var numero1=null;
 </script>
 

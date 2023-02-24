@@ -1,0 +1,31 @@
+<!-- Realiza un programa donde el usuario introduce 2 numeros y el ordenador responde por pantalla la resta de ambos numeros -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+
+    <h1>El resultado es: </h1>
+
+    <script>
+// Introducimos dos numeros
+        let uno=Number(prompt('Ingrese el primer valor'));
+        let dos=Number(prompt('Ingrese el segundo valor'));
+
+        // Nos aseguramos de su tipo de dato
+        console.log(typeof uno);
+
+        // Usamos una funcion
+        const sumar = (uno, dos)=>uno-dos;
+
+        // Finalmente, escribimos el resultado
+        document.write(sumar(uno, dos));
+
+        console.log(typeof sumar(uno,dos));
+    </script>
+</body>
+</html>

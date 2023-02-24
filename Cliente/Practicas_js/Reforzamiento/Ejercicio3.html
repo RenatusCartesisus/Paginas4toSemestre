@@ -1,0 +1,62 @@
+<!-- Nota: Recuerda imprimir tu nombre por consola -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+    <script>
+        // Mi version:
+        let columna;
+        // Nota: El segundo valor es el valor por defecto que introduce la ventana
+        // let columna=Number(prompt("Introduce el tamaño ", "0"));
+
+        let fila=parseInt(prompt("Introduce el tamaño ", "0"));
+
+        // Establece las filas que va a tener la piramide
+
+        for(columna = 1;columna<=fila;columna++){
+
+            // Esta parte hara una escalera unicamente de espacios iniciales antes de colocar los asteriscos
+
+        // for(let espacios = fila - columna;espacios>0;espacios--) {
+        for(let espacios = fila;espacios>columna;espacios--) {
+
+            document.write("&nbsp&nbsp");   
+        }
+
+            // Finalmente, se establece el numero de astericos, que se multiplica por dos debido a que deberia ser por el doble de las columnas, pero en este caso siempre sera un asterisco menos que eso.
+
+        for(let conta=1;conta<(2*columna);conta++){
+            document.write("*");
+        }
+        document.writeln("<br>"); 
+        }
+
+        // El original:
+
+    //     let fila;
+
+    //     // let columna=Number(prompt("Introduce el tamaño ", "0"));
+
+    //     let columna=parseInt(prompt("Introduce el tamaño ", "0"));
+
+    //     for(fila = 1;fila<=columna;fila++){
+
+    // for(let espacios = columna - fila;espacios>0;espacios--) {
+    //     document.write("&nbsp;&nbsp;");   
+    //  }
+    // for(let conta=1;conta<(2*fila);conta++){
+    //     document.write("*");
+    // }
+    // document.writeln("<br>");
+            
+    //     }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

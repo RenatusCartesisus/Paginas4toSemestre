@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Funciones con arreglos</h1>
+
+    <p id="hombres"></p>
+    <p id="mujeres"></p>
+    <p id="eliminarH"></p>
+    <p id="eliminarM"></p>
+    <p id="todos"></p>
+    <p id="joinH"></p>
+    <p id="joinM"></p>
+    <p id="sortH"></p>
+    <p id="sortM"></p>
+    <p id="reverseH"></p>
+    <p id="reverseM"></p>
+
+    <script>
+        //Declarar arreglos
+        let mujeres = [
+        "Ada Lovelace", "Marie Curie", "Juana de Arco", "Sor Juana Ines de la Cruz", "Rosalind Franklin"
+        ];
+        let hombres = [
+        "Isaac Newton", "Gregor Mendel", "Charles Darwin", "Alan Turing", "Gottfried Leibniz"
+        ];
+        //
+        //Push sirve para agregar nuevos datos al final del arreglo
+        hombres.push("Charles Babbage", "Heisenberg", "Francis Crick");
+        mujeres.push("Simone de Beauvoir", "Eleanor Roosevelt", "Hipatia de Alejandria");
+        
+        // .lenght nos indica el tamaño del arreglo
+        document.getElementById("hombres").innerHTML=`Hombres: ${hombres.length} <br> Estos son sus nombres: ${hombres}`;
+
+        document.getElementById("mujeres").innerHTML="Mujeres: "+mujeres.length +"<br>"+" Estos son sus nombres: " + mujeres;
+
+        //Eliminar el ultimo dato del arreglo
+        mujeres.pop();
+        hombres.pop();
+
+        //Eliminar un valor especifico usando su indice
+        delete hombres[0];
+        delete mujeres[0];
+
+        document.getElementById("eliminarH").innerHTML="Hombres: "+hombres.length +"<br>"+"Estos son sus nombres: "+hombres;
+
+        document.getElementById("eliminarM").innerHTML="Mujeres: "+mujeres.length +"<br>"+" Estos son sus nombres: " + mujeres;
+
+        //Concatenar dos arreglos
+        let concat = mujeres.concat(hombres);
+
+        //document.getElementById("todos").innerText= concat;
+
+        //UNIR-JOIN. Al imprimir los elementos del arreglo, los va a concatenar entre si con el valor que coloquemos entre comillas como parametro
+        document.getElementById("joinH").innerText=hombres.join("::"),"<br>";
+        document.getElementById("joinM").innerText=mujeres.join(" + "), "<br>";
+
+        //Metodo de orden alfabetico
+        let ordenarH=hombres.sort();
+        let ordenarM=mujeres.sort();
+
+        document.getElementById("sortH").innerText=ordenarH;
+        document.getElementById("sortM").innerText=ordenarM;
+    // Pone al reves el orden de todo el arreglo
+        let reversoH=hombres.reverse();
+        let reversoM=mujeres.reverse();
+
+
+    document.getElementById("reverseH").innerText=reversoH;
+    document.getElementById("reverseM").innerText=reversoM;
+
+    </script>
+</body>
+</html>

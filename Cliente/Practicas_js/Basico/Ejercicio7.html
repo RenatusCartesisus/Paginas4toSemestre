@@ -12,13 +12,32 @@
 <h1>Funciones en JavaScript</h1>
 
 <p id="elemento"></p>
+<p id="segundoElemento"></p>
 
 <script>
 
-    function saludo(nombre){
+//     function saludo(nombre){
+// document.getElementById("elemento").innerText="Hola, te saluda "+nombre;
+//     }
+//     saludo("Rene");
+// Primera funcion en JavaScript, declaradas de esta manera:
+function saludo(){
 document.getElementById("elemento").innerText="Hola, te saluda "+nombre;
     }
-    saludo("Rene");
+    // Ingresamos el valor del nombre 
+    saludo(nombre="Rene");
+
+// Una funcion que realiza una sencilla operacion aritmetica
+    var suma = function suma(primero, segundo){
+        // var primero=primero;
+        // var segundo=segundo;
+
+        // Agregamos esta sentencia para que nos regrese algo
+        return primero+segundo;
+    }
+// Llamamos a esta funcion y la colocamos en un elemento de HTML
+    document.getElementById("segundoElemento").innerText=suma(500, 500);
+
   
 </script>
     

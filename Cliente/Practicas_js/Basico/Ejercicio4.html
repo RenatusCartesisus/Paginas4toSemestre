@@ -6,31 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 4</title>
 </head>
+<!-- Nota: se usan los distintos tipos de headings -->
 <body>
-
+<!-- Heading 1 -->
     <h1>Metodos de Mensaje</h1>
+    <!-- Linea que separa el documento -->
     <hr>
 
     <h4>Cuadro de dialogo</h4>
 <script>
     // window.alert("Tu numero es: "+5*20);
+    // Mediante cuadros de dialogo, mostramos mensajes al abrir la pagina
     window.alert(`Has obtenido $${100} en dinero electronico`);
 </script>
 
 <h2>Metodos de salida</h2>
     <script>
+        // Escribir en medio del documento HTML
         document.write("JavaScript <br>");
-        document.writeln(10+10);
+        document.writeln(10+10);//El "writeln genera un minusculo espacio entre texto y texto"
         document.write("Texto");
     </script>
 
     <script>
+        // Operacion matematica
     document.write("El resultado es "+(10+10)*(8+3)); 
     </script>
 
     <h3>Impresion por consola</h3>
 
     <script>
+        // Impresion de una operacion por consola
         console.log(24+12+21+5);
         console.log((24+12)*(21+5));
     </script>
@@ -39,6 +45,7 @@
     <p id="ejemplo">Elemento a utilizar con JS</p>
 
     <script>
+ // Por medio de una etiqueta y su id, imprimimos en el documento ptra operacion matematica
 document.getElementById("ejemplo").innerHTML=15*2;
     </script>
     

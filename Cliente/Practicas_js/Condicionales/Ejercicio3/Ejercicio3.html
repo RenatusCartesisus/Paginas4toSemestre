@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3-2</title>
+    <!-- Colocamos el script en la etiqueta head. -->
+<script type="text/Javascript">
+// Creamos una nueva funcion, que se llamara mas adelante.
+ function mostrarMensaje(){
+
+let edad = prompt("Por favor indique su edad");
+// Validar
+if(edad==""){
+    alert("No ha introducido ninguna edad");
+    // Asignamos este valor para que, en caso de la condicion sea verdadera, no se ejecute el resto del codigo
+    edad=null;
+}
+// Number= su uso es convertir un objeto string a un valor numerico. Si no puede convertir un numero, devuelve NaN.
+// Esto con el fin de ingresar datos y que JavaScript no continue esta ejecucion si el usuario no ingresa ningun valor
+if(edad!=null){ 
+edad=Number(edad);
+// Condicional switch en JavaScript
+switch(edad){
+
+    case 0:{
+        alert("Acabas de nacer. Felicidades.");
+        break;
+    }
+    case 18:{
+        alert("Mayoria de edad. Los impuestos quieren saber tu ubicacion.");
+        break;
+    }
+    case 30:{
+        alert("Estas en el climax de tu vida.");
+        break;
+    }
+    case 65:{
+        alert("Ya te puedes jubilar, perfecto.");
+        break;
+    }
+    default:{
+        alert("Tu edad no es relevante en este momento.");
+        break;
+             }
+        }
+    }   
+}
+ 
+</script>
+</head>
+<body>
+    <!-- El elemento div no es nada mas que un contenedor de elementos en HTML -->
+    <div>
+        <p>Un parrafo de texto situado antes de la imagen dentro de un div contenedor</p> 
+         <!--Aqui volvemos a llamar a esa funcion que habiamos dejado antes  -->
+            <img onclick="mostrarMensaje()" src="https://tse1.mm.bing.net/th?id=OIP.sbr7O6Vkkdh-DZGqlUi1pgHaEd&pid=Api&P=0" alt="imagen" title="prueba Imagen" style="cursor: pointer;">
+            <!-- Titamos una alerta sin mas de JavaScript -->
+            <p onclick="alert('Alerta JavaScript')" style="color: #50AFF0;">Alerta</p>
+    </div>
+</body>
+</html>

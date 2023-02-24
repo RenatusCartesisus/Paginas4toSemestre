@@ -1,0 +1,19 @@
+/* Incluimos un selector, dentro sus atributos con respectivos valores */
+h1{
+    color: #00F;
+    text-align: center;
+}
+/* Alteramos anchos, bordes, colores, y demas con CSS */
+hr{
+    width: 350px;
+    border: 1px solid blue; 
+}
+p{
+    color: #1060C9;
+    width: 500px;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin: auto;
+
+ 
+}

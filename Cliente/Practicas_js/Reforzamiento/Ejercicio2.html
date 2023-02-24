@@ -1,0 +1,37 @@
+<!-- Realiza un programa que lea las notas de un alumno. Calcula la media e indica si ha suspendido o aprobado (nota media mayor o igual que 5) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+
+<h1>Promedio del alumno: </h1>
+
+    <script>
+//      Solicitamos las notas y las dejamos en valores numericos
+        let nota1 = Number(prompt('Ingresa la primera nota'));
+        let nota2 = Number(prompt('Ingresa la segunda nota'));
+        let nota3 = Number(prompt('Ingresa la tercera nota'));
+
+        // Creamos una funcion que nos muestre el promedio
+
+        let promedio = (nota1,nota2,nota3)=>(nota1+nota2+nota3)/3;
+//      Llamamos a nuestra funcion e imprimimos datos
+        let total=promedio(nota1,nota2,nota3);
+
+        document.write(total+"<br>");
+//      Uso de la condicional para determinar si el alumno ha aprobado
+        if(total<5){
+            document.write("No has logrado aprobar");
+        }
+        else{
+            document.write("Has logrado aprobar");
+        }
+        document.write("&nbsp");
+    </script>
+</body>
+</html>

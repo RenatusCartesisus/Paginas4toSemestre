@@ -1,0 +1,1 @@
+// Executing a function is called invoking, calling applying it. You can call a function by putting parentheses after an expression that produces a function value.

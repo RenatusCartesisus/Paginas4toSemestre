@@ -12,16 +12,23 @@
 <body>
 
     <p>Esta es la funcion PROMPT</p>
+    <!-- Lista desordenada -->
     <ol>
+        <!-- Elementos de la lista -->
         <li>Captura un valor no definido</li>
         <li>Muestra el valor</li>
     </ol>  
-
+<!-- Agregar atributo al elemento HTML -->
     <p id="etiqueta"></p>
-
+<!-- Abrir el Script -->
        <script>
+        // Lo que hacemos es pedir por medio una ventana emergente que se introduzca un nombre
+
+        // Nota: no estamos definiendo persona como variable, es una indefinicion
         Persona = prompt("Hola, introduce tu nombre");
+        // Ese nombre lo escribimos por consola
         console.log(Persona);
+        // De la misma, escribimos el nombre en un elemento parte del documento HTML, buscandolo por medio de su atributo "id"
         document.getElementById("etiqueta").innerHTML= Persona;
         </script>
 

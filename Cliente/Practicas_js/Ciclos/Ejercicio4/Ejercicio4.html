@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias</title>
+</head>
+<body>
+<h1>Ciclo Do While + Arreglo</h1>
+
+<script>
+    // Declaramos arreglo e iterador
+    var dias=["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+    let i=0;
+// Ahora usamos un ciclo Do While
+
+// La unica diferencia es que lo que indicamos dentro del Do, se realiza sin tener en cuenta la condicion. Despues de esta primera iteracion, comienza a observar la condicion.
+    do{
+        document.write(dias[i]+"<br>");
+        i++;
+    }
+    while(i<dias.length);
+</script>
+    
+</body>
+</html>
