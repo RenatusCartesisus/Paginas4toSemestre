@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures</title>
+</head>
+<body>
+
+    <!-- HTML introdujo el elemento picture, que contiene a su vez el elemento <source>, y cada uno de estos referencia a una imagen diferente
+    
+    En los atributos del source se describe cuando se tiene que usar cada imagen
+
+    Es importante colocar un <img> como ultimo hijo, si el navegador no soporta el <picture> o no encuentra el source adecuado, entonces carga el <img>
+    
+    -->
+
+    <img src="https://imgs.search.brave.com/3I8-8sHXNgjT2RMciCcUf9mNWrZ4Yxd_qWAqm3rgpzM/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/LmV4cGxpY2l0LmJp/bmcubmV0L3RoP2lk/PU9JUC5ackoyQUYt/N1Z0eUdTUVI0Q3Mw/dkZnSGFIYSZwaWQ9/QXBp" 
+    
+    srcset="https://imgs.search.brave.com/du5J-tPwq-BBInSczfNwsbE-VZqNANcHiBbwweXwOsc/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5f/RWVSaXhYRFF5aGdi/eV9OTG1KaU5RSGFF/SyZwaWQ9QXBp 2x" alt="">
+
+<picture>
+
+    <source srcset="https://imgs.search.brave.com/bJTksGl3H-X3T4GQ7PjdtgHx-nPyX2mDpT8L0U-F3eU/rs:fit:355:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5w/ck8ydFlhSW02QzZW/MThBSDI2aWhnSGFK/NCZwaWQ9QXBp" media="(min-width:900px)">
+    <img src="https://imgs.search.brave.com/_6aUc3lDR64xTELlX_DsSKh5_Hf1VGgXG1ECYYHsk80/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5q/clpPT3pQZDhLd0No/R3R1aVFJUlN3SGFF/SyZwaWQ9QXBp" alt="Aristoteles">
+
+</picture>
+
+</body>
+</html>

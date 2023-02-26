@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://imgs.search.brave.com/6_lWcZbnAfh1XhKOeHZEkiGp5nhtP8nCIKqQLliQIdc/rs:fit:1100:825:1/g:ce/aHR0cHM6Ly93d3cu/d2lraWJpby51cy93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMC8w/NS9HcmFudC1DYXJk/b25lLmpwZw");
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment:fixed;
+}
+.info{
+background-color: #000;
+color: #FFF;
+padding: 20px;
+text-align: center;
+
+}
+.redes a i{
+    width: 40px;
+    color: #00F;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    padding: 30px;
+    margin: auto;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    font-size: 20px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.redes a:hover{
+    color: #000;
+    height: 50px;
+}
+nav ul li a{
+    /* margin: 0px 20px; */
+    /* margin-right: 20px;
+    margin-left: 20px; */
+    margin: 20px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Gloock', serif;
+}
+section{
+    text-align: center;
+  padding-top: 100px;
+}
+section h1{
+    font-size: 80px;
+    color: #8641f4;
+    -webkit-text-stroke: 2px #000;
+}
+section a{
+    text-decoration: none;
+    color: #8641f4;
+    border: 3px solid #8641f4;
+    outline: black solid;
+    text-shadow: 1px 2px 2px #fff;
+    padding: 10px 15px;
+}
+#parrafo{
+    display: flex;
+}
+#parrafo p{
+    display: flex;
+    background-color: rgb(52, 50, 110);
+    margin: 25px;
+    padding: 25px;
+    font-family: 'Mukta', sans-serif;
+    color: #fff;
+}
+#imagen{
+    background-color: rgb(52, 50, 110);
+    margin: 25px;
+    padding: 25px; 
+}
+div img{
+width: 100%;
+}

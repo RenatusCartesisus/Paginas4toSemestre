@@ -1,0 +1,16 @@
+h1{
+    /* color:rgb(102, 3, 216); */
+    text-align: center;
+    /* background-color: bisque; */
+    padding: 30px;
+}
+
+/* body {
+    background-color: rgba(175, 112, 34, 0.507);
+} */
+.row{
+   justify-content: center;
+}
+a{
+    margin-left: 49vw;
+}

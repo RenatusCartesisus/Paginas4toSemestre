@@ -1,7 +1,3 @@
-
-
-
-
 let nombre="Jose Jose";
 let edad=17;
 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    
+<h1>Funcion inner con HTML</h1>
+<hr>
+<p>InnerHTML controla lo que se incluye en un elemento</p>
+
+<div id="salida">Aqui va la salida</div>
+
+
+<script>
+    let dato = Number(prompt("Ingrese un numero", "0"));
+    // let numero=parseInt(dato);
+
+    dato*=2;
+
+    document.getElementById('salida').innerHTML=`El doble es ${dato}`;
+</script>
+
+</body>
+</html>
