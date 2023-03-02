@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+
+    <h1>Eventos con JavaScript</h1>
+
+    <button id="boton">Aceptar</button>
+    <input type="text" id="input">
+    <br>
+    <img src="pou.jpg" id="thumb" class="thumb" alt="">
+
+    <button id="mybtn">Button</button>
+
+    <script>
+//  We can make something happend
+        const mybtn= document.getElementById('mybtn');
+
+        mybtn.addEventListener("click", function(e){
+            // What is "e"
+            console.log(e);
+            if(e.ctrlKey){
+                console.log("Ctrl Key was pressed while clicking");
+            }
+        });
+
+        const thumb = document.getElementById('thumb');
+        const boton = document.getElementById('boton');
+        const input = document.getElementById('input');
+
+        thumb.addEventListener("onfocus", function(e){
+            console.log("Este evento es de tipo" + e.type);
+            console.log("Este evento ha sucedido en: "+e.target);
+        });
+        thumb.addEventListener("click",  function(e){
+            console.log("Este evento es de tipo " + e.type);
+            console.log("Este evento ha sucedido en: "+e.target);
+        });
+        boton.addEventListener("click",function(e){
+            console.log("Este evento es de tipo " + e.type);
+            console.log("Este evento ha sucedido en: "+e.target);
+        });
+        input.addEventListener("onselect", function(e){
+            console.log("Este evento es de tipo " + e.type);
+            console.log("Este evento ha sucedido en: "+e.target);
+        });
+
+
+    </script>
+    
+</body>
+</html>

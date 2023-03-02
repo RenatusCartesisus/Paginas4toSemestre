@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Ciclo While</h1>
+
+    <script>
+        var i = 0;
+        var dato;
+        // do{
+        //     let dato=Number(window.prompt("Ingrese el numero de vueltas: "));
+        
+        //     document.write(`El numero introducido es: ${dato} <br>`);
+        //     document.write(`El corredor esta en ${i} <br>`);
+        //     i++;
+        
+        // }
+        // while(i<10);
+        
+        while(i<10){
+         dato=Number(window.prompt("Ingrese el tiempo de vuelta que tarda el corredor: "));
+           
+        document.write(`El numero introducido es: ${dato} <br>`);
+        document.write(`El corredor esta en ${(i+1)} <br>`);
+        i++;
+        
+        }
+
+        document.write(`<br><h2>La carrera ha terminado.</h2>`);
+        document.write(`La ultima vuelta introducida es: ${dato}`)
+
+    </script>
+    
+</body>
+</html>
