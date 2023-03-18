@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- En este ejercicio, usaremos un formulario para ingresar datos y despues hacer operaciones aritmeticas con ellos -->
+<!-- Ingresamos nombres -->
+    <form name="formulario" action=""> 
+<div class="contenedor">
+    <div>
+        <label for="nombre">Nombre </label>
+        <input type="text" name="nombre" id="nombre" size="30" onkeypress="return letras3(event);" onpaste="return false;" autocomplete="off">   
+        <label for="Apellidos">Apellidos </label>
+        <input type="text" name="apellidos" id="apellidos" size="30" onkeypress="return letras3(event);" onpaste="return false;" autocomplete="off">
+    </div>
+
+</div>
+
+    <br><br>
+
+    <h3>Realiza una operacion</h3>
+<!-- Ingresamos valores numericos -->
+    <div class="contenedor">
+        <div>
+    <label for="num1">Numero 1 </label><input type="text" id="num1" class="form_input" onkeypress="return numeros(event);" onpaste="return false" autocomplete="off">
+    <label for="num2">Numero 2 </label><input type="text" id="num2" class="form_input" onkeypress="return numeros(event);" onpaste="return false" autocomplete="off">
+        </div>
+    </div>
+        <br><br>
+        <!-- Botones para realizar las operaciones -->
+<div class="contenedor">
+    <input type="button" id="btnsumar" value="Sumar" onclick="alert(suma());">
+    <input type="button" id="btnrestar" value="Restar" onclick="alert(resta());">
+    <input type="button" id="btnmult" value="Multiplicar" onclick="alert(multiplicacion());">
+    <input type="button" id="btndiv" value="Dividir" onclick="alert(division());">
+
+</div>
+    <br><br>
+<!-- Boton para limpiar los campos de texto -->
+    <input type="reset" value="limpiar" onclick="function reiniciar();">
+
+        
+    </form>
+
+    <script>
+        // Indicamos que solo se ingresan numeros
+        function numeros(n){
+            key=n.keyCode||n.wich;
+            teclado=String.fromCharCode(key);
+            numero="0123456789";
+            especial="8-37-39-46-164";
+            tecla_especial=false;
+            
+            for(var i in especial){
+                if(key==especial[i]){
+                    tecla_especial=true;
+                }
+                if(numero.indexOf(teclado)==-1&&!tecla_especial){
+                    return false;
+                }
+            }
+        }
+
+    </script>
+
+    <script>
+        // Indicamos que solo se ingresan letras
+        function letras3(L){
+            key=L.keyCode||L.which;
+            tecla=String.fromCharCode(key).toLowerCase();
+            letras="áéíóúabcdefghijklmnñopqrstuvwxyz";
+            especial="8-37-39-46-164";
+            tecla_especial=false;
+
+            for(var j in especial){
+                if(key==especial[j]){
+                    tecla_especial=true;
+                    break;
+                }
+            }
+            if(letras.indexOf(tecla)==-1&&!tecla_especial){
+                return false;
+            }
+        }
+    </script>
+
+<!-- Las siguientes son las funciones para realizar las operaciones aritmeticas -->
+    <script>
+
+        var resta = function(num1, num2){
+            var num1=parseFloat(document.getElementById('num1').value);
+            var num2=parseFloat(document.getElementById('num2').value);
+
+            // var resultadoR= num1-num2;
+            // return resultadoR;
+
+            return num1-num2;
+        }
+    </script>
+
+<script>
+    var suma = function(num1, num2){
+        var num1=parseFloat(document.getElementById('num1').value);
+        var num2=parseFloat(document.getElementById('num2').value);
+
+        // var resultadoR= num1-num2;
+        // return resultadoR;
+
+        return num1+num2;
+    }
+</script>
+<script>
+    var multiplicacion = function(num1, num2){
+        var num1=parseFloat(document.getElementById('num1').value);
+        var num2=parseFloat(document.getElementById('num2').value);
+
+        // var resultadoR= num1*num2;
+        // return resultadoR;
+
+        return num1*num2;
+    }
+</script>
+
+<script>
+    var division = function(num1, num2){
+        var num1=parseFloat(document.getElementById('num1').value);
+        var num2=parseFloat(document.getElementById('num2').value);
+
+        // var resultadoR= num1/num2;
+        // return resultadoR;
+
+        return num1/num2;
+    }
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,10 @@
+body{
+    background-image: url("Don.jpg");
+    /* Le colocamos una imagen de fondo */
+    background-repeat: no-repeat;
+    /* No se repetira */
+    background-size: cover;
+    /* Queremos que la imagen cubra todo el fondo */
+    background-attachment: fixed;
+    /* Queremos que la imagen se quede fijada, no queremos que sufra un desplazamiento con el documento */
+}

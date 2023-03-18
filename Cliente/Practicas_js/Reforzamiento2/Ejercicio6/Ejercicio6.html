@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h1>Formulario basico</h1>
+
+    <hr>
+<!-- Con font podemos cambiar el color y la fuente de los elementos que tenga dentro  -->
+    <form  name="formulario" method="get">
+        <font color="black" face="Century Gothic" autocomplete="off">Coloca tu nombre completo</font>
+        <br><br>
+        <!-- Ingresamos un campo de texto -->
+        <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="nombre">
+        <br><br>
+        <font color="black" face="Century Gothic">Selecciona tu genero</font>
+        <br><br>
+    <!-- Radiobotones -->
+        <font color="black" face="Century Gothic">
+           <label for="hombre">Hombre</label> <input type="radio" name="genero" id="hombre" value="Hombre">
+            <label for="mujer">Mujer</label><input type="radio" name="genero" id="mujer" value="Mujer">
+        </font>
+    <br><br>
+
+        <font color="black" face="Century Gothic">
+            El usuario acepta los terminos y condiciones que se estipulan en este sitio.
+            <br>
+            Este sitio web es una practica academica sin ningun fin de lucro.
+        </font>
+        <br><br>
+<!-- CheckBox -->
+        <font color="black" face="Century Gothic">
+           <label for="terminos">Acepto terminos y conciciones</label> <input type="checkbox" name="terminos" id="terminos">
+        </font>
+    
+    <br><br>
+    <input type="submit" id="send" name="send">
+    </form>
+
+<!-- Validaciones con JS -->
+
+    <script>
+        (function() {
+            var formulario = document.getElementsByName('formulario')[0]; 
+            var elementos  = formulario.elements;
+            var boton = document.getElementById('send');
+            
+            var validarNombre = function(e){
+                // Si no se ha ingresado ningun nombre
+                if(formulario.nombre.value==0){
+                    alert("Introduce tu nombre");
+                }
+            };
+    
+            var validarRadio = function(e){
+                // Si los radiobotones no estan seleccionados (ninguno de ellos)
+            if(formulario.genero[0]==true||formulario.genero[1].checked==true){
+            }
+            else{
+                alert('Selecciona tu genero');
+                e.preventDefault();
+                }
+            };
+            
+            var validarCheckbox=function(e){
+                // Si la checkbox no esta activada
+            if(formulario.terminos.checked==false){
+            alert("Confirma los terminos y condiciones");
+            e.preventDefault();
+                }
+            };
+            var validar=function(e){
+                // Funcion que llama a todas las anteriores
+                validarNombre(e);
+                validarRadio(e);
+                validarCheckbox(e);
+            };
+            formulario.addEventListener("submit", validar);
+        }());
+    </script>
+</body>
+</html>

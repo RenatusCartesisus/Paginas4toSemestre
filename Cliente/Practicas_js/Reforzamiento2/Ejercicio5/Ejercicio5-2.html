@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5-2</title>
+</head>
+<body>
+    <h1>Eventos con JavaScript</h1>
+<!-- Copia -->
+    <button id="boton">Aceptar</button>
+
+    <input type="text" id="input">
+    <br>
+    <!-- Mi proyecto -->
+    <img src="pou.jpg" id="thumb" class="thumb" alt="">
+
+    <script>
+    // Comprende la funcion del atributo type en esta linea de codigo
+   
+            var evento1 = function(e){
+                // Regresa una cadena regresando el tipo de evento
+                alert("Este evento es de tipo " + e.type);
+            };
+            var evento2 = function(e){
+                // Recupera el emento donde el evento ha ocurrido
+                // alert("Este elemento es: " + e.target);
+                console.log("Evento sacado de " +e.target);
+            };
+            // Nodo: punto de conexion entre un elemento y otro
+
+            let thumb=document.getElementById('thumb');
+            let boton=document.getElementById('boton');
+            let input=document.getElementById('input');
+
+            thumb.addEventListener("onfocus", evento1);
+            thumb.addEventListener("click", evento2);
+            boton.addEventListener("dblclick", evento1);
+            input.addEventListener("keydown", evento1);
+            input.addEventListener("focus", evento2);
+            input.addEventListener("focus", evento2);
+            input.addEventListener("blur", evento1);
+            // click = al pulsar el boton izquierdo del raton
+            // dblclick = double click
+            // mouseenter = cuando el mouse entra en la zona con el evento
+            // mouseleave = cuando salimos de la zona con el evento
+            // mousedown = cuando pulsamos y no soltamos el boton izquierdo
+            // mouseup = cuando soltamos el boton izquierdo del raton
+            // mousemove = cuando movemos el raton
+            
+            // Eventos de teclado:
+            
+            // keydown = cuando pulsamos una tecla 
+            // keyup = cuando soltamos una tecla
+            // keypress = cuando pulsamos una tecla y no la soltamos
+            
+            // blur = perder el "focus"
+
+    </script>
+    
+</body>
+</html>
+
+
+

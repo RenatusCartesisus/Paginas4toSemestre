@@ -1,6 +1,7 @@
 h1{
     /* color:rgb(102, 3, 216); */
     text-align: center;
+    /* Alineacion del texto y distancia del texto a los bordes del elemento */
     /* background-color: bisque; */
     padding: 30px;
 }
@@ -10,7 +11,9 @@ h1{
 } */
 .row{
    justify-content: center;
+   /* Colocar el contenido al centro */
 }
 a{
     margin-left: 49vw;
+    /* Margen a la izquierda del element */
 }

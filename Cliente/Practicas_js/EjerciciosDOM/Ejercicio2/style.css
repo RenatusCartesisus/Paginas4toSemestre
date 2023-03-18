@@ -1,0 +1,27 @@
+.morado{
+    display: inline-block;
+    margin-right: 10px;
+    border: 10px solid #9af;
+    background-color: #790cdf;
+    width: 300px;
+    box-sizing: border-box;
+    height: 300px;
+}
+.verde{
+    display: inline-block;
+    margin-right: 10px;
+    border: 10px solid #3f8;
+    background-color: #8fa;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+}
+.azul{
+    display: inline-block;
+    margin-right: 10px;
+    border: 10px solid #aff;
+    background-color: #21f;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+}

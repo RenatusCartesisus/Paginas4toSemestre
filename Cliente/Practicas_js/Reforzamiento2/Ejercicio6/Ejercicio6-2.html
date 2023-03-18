@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio6</title>
+</head>
+<body background="descarga.jpg">
+    <h1 align="center"> <font color="gold" face="Century Gothic">  Formulario Básico
+
+    </font>
+
+    </h1>
+    <hr>
+    <form action="" name="Formulario" method="get">
+    <font color="White" face="Century Gothic">Coloca tu nombre completo</font>
+    <br>
+    <br>
+    <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Coloca tu nombre">
+    <br>
+    <br>
+    <font color="white" Face="Century Gothic">Selecciona tu género</font>
+    <br>
+    <br>
+    <font color="white" face="Century Gothic">
+        <input type="radio" name="genero" id="Hombre" value="Hombre">Hombres
+        <input type="radio" name="genero" id="Mujeres" value="Mujeres">Mujeres
+    </font>
+    <br>
+    <br>
+    <br>
+    <font color="white" face="Century Gothic">El usuario confirma y acepta 
+        los terminos estimulados en este sitio.
+        Este sitio web solo es una practica academica sin ningun fin del lucro.
+    </font>
+    <br>
+    <br>
+    <font color="white" face="Century Gothic">
+        <input type="checkbox" name="terminos" id="terminos">Acepto terminos y condiciones.
+    </font>
+    <br>
+    <br>
+    <input type="submit" id="send" value="Enviar">
+    <input type="submit" id="cancel" value="Cancelar">
+</form>
+
+     <Script>
+        (function(){
+          var Formulario=document.getElementById('Formulario')[0];
+          elementos=Formulario.elements;
+          boton = document.getElementById('send');
+          //Validación con JavaScript
+          var validaNombre=function(e){
+            if(Formulario.nombre.value == 0){
+                alert("Introduce tu nombre");
+                e.preventDefault();
+            }
+          };
+        }
+        )
+     </Script>
+</body>
+</html>

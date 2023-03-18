@@ -1,0 +1,51 @@
+body{
+    background: #000;
+}
+label{
+    color: #fff;
+  
+}
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+div{
+    justify-content: center;
+}
+
+#btnsumar{
+    background-color: #00F;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20%;
+    border-style: none;
+    font-family: sans-serif;
+    
+}
+#btnrestar{
+    background-color: #F00;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20%;
+    border-style: none;
+    font-family: sans-serif;
+
+}
+#btnmult{
+    background-color: #0F0;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20%;
+    border-style: none;
+    font-family: sans-serif;
+}
+#btndiv{
+    background-color: rgb(120, 52, 209);
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20%;
+    border-style: none;
+    font-family: sans-serif;
+
+}

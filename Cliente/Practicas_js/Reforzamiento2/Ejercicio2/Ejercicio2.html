@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Estilo2.css" rel="stylesheet" type="text/css">
+    <!-- Incluimos Bootstrap profe JAJAJAJA -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d3ae0c1cce.js" crossorigin="anonymous"></script>
     <title>Ejercicio 2</title>
 
 </head>
-<!-- S9gyf -->
 <body>
     <h1>Juego del Dado</h1>
-
+    <!-- Diseño traído del Bootstrap, un diseño sencillo para mostrar los datos -->
     <div class="row">
       <div class="col-md-4">
         <div class="card">
@@ -25,25 +25,23 @@
       </div>
       </div>
       <br>
-
-      
-   
-    <!-- <p id="salida"></p> -->
+<!-- Le agregamos un logotipo al boton -->
 
     <a name="" id="boton" class="btn btn-primary" href="#" role="button"><i class="fa-sharp fa-solid fa-dice"></i></a>
 
+    
     <script>
-//Smm2w
         document.getElementById('boton').onclick =function salida(){
-
+      // Creamos un valor aleatorio, que va del 1 al 32
         let suerte=parseInt((Math.random()*32))+1;
         // let dado=parseInt(suerte)+1;
 
         console.log(suerte);
-
+      // Creamos una variable que actua como un elemento del documento HTML
         let obj1=document.getElementById("salida");
 
         if(suerte>15){
+          // Escribimos dentro de ese elemento
         document.getElementById('resultado').innerHTML='Felicidades!'
          obj1.innerHTML='Has ganado con un '+suerte;
         }
@@ -53,7 +51,6 @@
         }
     }
     </script>
-
     <!-- <a href="javascript:location.reload()">
     <button>Jugar</button>
     </a>

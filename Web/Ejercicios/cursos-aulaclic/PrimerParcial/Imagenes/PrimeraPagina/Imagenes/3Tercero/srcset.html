@@ -1,0 +1,44 @@
+<!-- El atributo srcset permite establecer distintas imagenes en funcion de la resolucion del dispositivo y del ancho de la pantalla -->
+
+<!-- Tenemos el siguiente formato: 
+<img srcset="img_resol_normal.png 1x, img_resol_alta.png 2x"> -->
+
+<!-- Si la resolucion de la pantalla es 1x, equivalente a un monitor de ordenador, se mostrara: 
+img_resol_normal.png
+y si la resolucion de la pantalla es de 2x de un dispositivo movil de alta resolucion, se mostrara la imagen "img_resol_alta.png"
+-->
+
+<!-- Podemos utilizar el ancho de pantalla ver en el siguiente ejemplo: 
+<img srcset="img_resol_normal.png 500w, img_resol_alta.png 700w">
+ -->
+
+ <!-- Si el ancho de pantalla es menor o igual a 500w, se mostrara img_resol_normal.jpg, y si es mayor de 500w se mostrara img_resol_alta.jpg -->
+
+ <!-- Las unidades "2" son descriptores de anchira que equivalen a pixeles para una resolucion normal -->
+
+ <!-- A su vez, el atributo "sizes" afecta a srcset, complicando mas los calculos, y no todos los navegadores implementan igual estos atributos, por lo que es preferible usar la etiqueta "picture", cuando queramos establecer distintas imagenes en funcion de la resolucion del dispositivo y del ancho de pantalla -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+<img src="https://imgs.search.brave.com/bJTksGl3H-X3T4GQ7PjdtgHx-nPyX2mDpT8L0U-F3eU/rs:fit:355:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5w/ck8ydFlhSW02QzZW/MThBSDI2aWhnSGFK/NCZwaWQ9QXBp" 
+srcset="https://tse4.mm.bing.net/th?id=OIP.hp8ckJc7k_5p_U6x6Xt6CgHaHa&pid=Api&P=0 ,
+ https://imgs.search.brave.com/y7kDLcHAz2nL-keiZOVtjr8atg9jVgtXav07uVB6MS4/rs:fit:627:225:1/g:ce/aHR0cHM6Ly90c2Uy/LmV4cGxpY2l0LmJp/bmcubmV0L3RoP2lk/PU9JUC5qc1BOYlBZ/cnRmNWs4U2hTU3NS/bUdBSGFGbSZwaWQ9/QXBp 1x, 
+https://imgs.search.brave.com/hhp3HqKQLv51XKAzWo0-6kZgbo6fJ7CDNwZtRXH-P10/rs:fit:600:492:1/g:ce/aHR0cHM6Ly9wcmlt/aWNpYS5jb20udmUv/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDUvbW9uc2lhdV8t/X2FsZXhhbmRyZV9l/dF9kaW9nYzNhOG5l/LmpwZw 0.5x" alt="">
+
+
+<!-- Con esta etiqueta se puede hacer el mismo juego, y colocar distintas imagenes dependiendo la resolucion -->
+<picture>
+<source srcset="https://imgs.search.brave.com/hhp3HqKQLv51XKAzWo0-6kZgbo6fJ7CDNwZtRXH-P10/rs:fit:600:492:1/g:ce/aHR0cHM6Ly9wcmlt/aWNpYS5jb20udmUv/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDUvbW9uc2lhdV8t/X2FsZXhhbmRyZV9l/dF9kaW9nYzNhOG5l/LmpwZw" media="(min-width:500px)">
+<img src="https://imgs.search.brave.com/hhp3HqKQLv51XKAzWo0-6kZgbo6fJ7CDNwZtRXH-P10/rs:fit:600:492:1/g:ce/aHR0cHM6Ly9wcmlt/aWNpYS5jb20udmUv/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDUvbW9uc2lhdV8t/X2FsZXhhbmRyZV9l/dF9kaW9nYzNhOG5l/LmpwZw" alt="">
+</picture>
+    
+</body>
+</html>

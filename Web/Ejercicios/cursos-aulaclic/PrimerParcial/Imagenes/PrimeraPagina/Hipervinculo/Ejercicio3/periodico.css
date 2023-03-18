@@ -1,0 +1,78 @@
+*{
+    margin: 0 auto;
+}
+body{
+    width: 90%;
+    background: url("https://imgs.search.brave.com/bxkHZp4-HhLeHii4SylPglNPrH0GtWAcqq6DiAqCuo8/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/cEdNa29WSkVrT1lp/RXBtSUpxT0RRSGFF/OCZwaWQ9QXBp");
+
+}
+.blacktopline{
+    height: 20px;
+    background: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.namenews{
+    font-size: 15vh;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'UnifrakturMaguntia', cursive;
+}
+.datanews{
+    /* background: #f00; */
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+}
+.datanews ul li{
+    display: inline-flex;
+    padding: 10px;
+}
+.datanews ul{
+  width: 100%;
+}
+.titleplana{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 3vh;
+    margin-bottom: 20px;
+}
+.foto{
+    display: inline-flex;
+}
+.foto img{
+    display: inline-flex;
+    width: 70%;
+    background-color: yellow;
+}
+.div-col4{
+    width: 25%;
+    margin: 0 auto;
+    display: inline-flex;
+    padding: 20px;
+}
+.div-col3{
+    width: 33.3%;
+    margin: 0 auto;
+    display: inline-flex;
+    padding: 20px;
+}
+/* .div-col2{
+    width: 25%;
+    background: cyan;
+    color: white;
+    margin: 0 auto;
+    display: inline-flex;
+} */
+
+.body-content{
+width: 100%;
+display: inline-flex;
+}
+h3{
+    font-size: 3.6vh;
+}

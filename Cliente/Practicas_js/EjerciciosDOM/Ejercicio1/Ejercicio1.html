@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+<body>
+
+    <h1>Introduccion al DOM</h1>
+
+    <h3 id="titulo">Document Object Model</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repudiandae qui amet a magnam ratione dolores alias quos doloremque architecto. Quos, autem! Culpa voluptatibus non quibusdam, obcaecati sunt aut cupiditate dolore nihil eveniet soluta maxime ea magnam, sint beatae perferendis repellat vitae mollitia odit doloribus laborum quidem vero consequuntur! Ex necessitatibus officiis nemo officia sunt tempore consequatur blanditiis quam repudiandae ratione. Architecto quidem modi dolorum exercitationem ad quibusdam soluta consectetur ducimus id veritatis labore odio reprehenderit voluptatibus, earum, porro velit ullam molestias. Odio numquam cupiditate doloribus ducimus sed vitae sit, repudiandae, repellat amet optio tempora eaque, laborum est iure ullam.</p>
+
+    <!-- <p align="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repudiandae qui amet a magnam ratione dolores alias quos doloremque architecto. Quos, autem! Culpa voluptatibus non quibusdam, obcaecati sunt aut cupiditate dolore nihil eveniet soluta maxime ea magnam, sint beatae perferendis repellat vitae mollitia odit doloribus laborum quidem vero consequuntur! Ex necessitatibus officiis nemo officia sunt tempore consequatur blanditiis quam repudiandae ratione. Architecto quidem modi dolorum exercitationem ad quibusdam soluta consectetur ducimus id veritatis labore odio reprehenderit voluptatibus, earum, porro velit ullam molestias. Odio numquam cupiditate doloribus ducimus sed vitae sit, repudiandae, repellat amet optio tempora eaque, laborum est iure ullam.</p> -->
+
+    <p id="segundo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi nihil unde officiis ut similique quia maiores autem exercitationem adipisci dolores accusamus iure officia aliquid, nisi commodi dignissimos reiciendis suscipit dolorum veritatis ab sunt eligendi sed? Fuga totam odio cumque?</p>
+
+    <p id="tercero">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facilis harum voluptatum debitis eveniet atque soluta ut aliquid temporibus exercitationem nemo aliquam consectetur alias eius suscipit, perspiciatis illum omnis. Quos!</p>
+
+    <!-- Objeto JS asociado al documento HTML visualizado en el navegador. El navegador lo almacena en la propiedad document de window.  -->
+
+    <!-- Los objetos DOM pueden buscarse por atributos (id, class) de HTML. -->
+
+    <script>
+
+// append() = appendChild()
+
+        var elementoP=document.getElementsByClassName('p');
+        var segundoP=document.getElementById("segundo");
+        // El DOM trabaja por 5 pasos:
+
+        //1.-Crea el elemento
+        var elemento = document.createElement('h2');
+
+        // 2.-Crear un nodo de texto
+        // El nodo es lo que va a estar dentro del h2
+        var contenido = document.createTextNode('Elemento de texto creado con DOM');
+
+        // 3.-Agregamos el nodo de texto al elemento
+        elemento.append(contenido);
+
+        // 4.-Agregar elementos al elemento
+        elemento.setAttribute('id', 'creado');
+        // Coloca un atributo del html
+        elemento.setAttribute('align', 'center');
+        elemento.setAttribute('style', 'color: #a0e;');
+
+        // 5.-Agregar el elemento al documento
+        document.body.append(elemento);
+    </script>
+</body>
+</html>
